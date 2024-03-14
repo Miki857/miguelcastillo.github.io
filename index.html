@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FullStack Developer Author: Miguel Castillo">
+
         <title>Miguel Castillo | Full Stack Developer</title>
 
         <!-- FONTS -->
@@ -16,10 +18,10 @@
     <body class="body">
         <main class="main">
             <!-- TEMPORAL HERO -->
-            <div class="tempHero flex flex-column justify-center align-center">
+            <!-- <div class="tempHero flex flex-column justify-center align-center">
                 <h1>Miguel Castillo.</h1>
                 <p>Desarrollo Front-End y Back-End</p>
-            </div>
+            </div> -->
 
             <!-- HERO -->
             <div class="section__hero" id="home">
@@ -32,7 +34,7 @@
                 <p class="section__home__name">
                     <span class="auto-type"></span>                    
                 </p>
-                <p class="section__hero__profession">Desarrollador Full Stack</p>
+                <!-- <p class="section__hero__profession">Desarrollador Full Stack</p> -->
 
                 <!-- Sociales -->
                 <section class="section__sociales">
@@ -110,7 +112,51 @@
                         </p>
                     </article>
                 </div>
-                <i class="align-text-center btn_allProyects" onclick="alert('Disculpa mi pagina aun esta en construccion.');">Ver todos</i>
+                <i class="align-text-center btn_allProyects" onclick="showAllPortfolio();">Ver todos</i>
+            </div>
+
+            <!-- SHOW ALL PORTFOLIO -->
+            <div class="section__allPortfolio allPortfolio-hidden flex justify-center">
+                <div class="section__allPortfolio__wrapper flex flex-column align-center">
+                    <h2 class="centerText title"><i class='bx bxs-star' ></i>Proyectos</h2>
+                    <div class="proyects__slider flex flex-column align-center">
+                        <article class="proyects__slider__article flex flex-column justify-between">
+                            <!-- <img src="assets/images/Blog Cars LEGO.png" alt="" class="img" onclick="alert('Disculpa mi pagina aun esta en construccion.');"> -->
+                            <div class="flex justify-between">
+                                <h2 class="job_title">BLOG LEGO CARS</h2>
+                            </div>
+                            <p class="job_description">Autos a control hechos con bloques de LEGO.</p>
+                            <p class="job_tecUsed">
+                                <i class='bx bxl-html5 noMargin'></i>
+                                <i class='bx bxl-css3 noMargin' ></i>
+                            </p>
+                        </article>
+                        <article class="proyects__slider__article flex flex-column justify-between">
+                            <!-- <img src="assets/images/Recipe.png" alt="" class="img"  onclick="alert('Disculpa mi pagina aun esta en construccion.');"> -->
+                            <div class="flex justify-between">
+                                <h2 class="job_title">Receta Simple de Omelette</h2>
+                            </div>
+                            <p class="job_description">Blog de preparación de Omelette.</p>
+                            <p class="job_tecUsed">
+                                <i class='bx bxl-html5 noMargin'></i>
+                                <i class='bx bxl-css3 noMargin' ></i>
+                            </p>
+                        </article>
+                        <article class="proyects__slider__article flex flex-column justify-between">
+                            <!-- <img src="assets/images/Fylo.png" alt="" class="img" onclick="alert('Disculpa mi pagina aun esta en construccion.');"> -->
+                            <div class="flex justify-between">
+                                <h2 class="job_title">Fylo</h2>
+                            </div>
+                            <p class="job_description">Almacena tus archivos de forma segura.</p>
+                            <p class="job_tecUsed">
+                                <i class='bx bxl-html5 noMargin'></i>
+                                <i class='bx bxl-css3 noMargin' ></i>
+                                <i class='bx bxl-javascript noMargin'></i>
+                            </p>
+                        </article>
+                    </div>
+                    <i class='bx bx-window-close' onclick="showAllPortfolio();"></i>
+                </div>
             </div>
 
             <!-- REVIEWS -->
@@ -166,16 +212,12 @@
             <a href="#portfolio"><i class='bx bx-briefcase' ></i></a>
             <a href="#contact"><i class='bx bxs-contact' ></i></a>
         </header>
-    </body>
 
-    <!-- TypeEffect Scrips -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["<i class='bx bxs-chevron-left' ></i>/Miguel Castillo<i class='bx bxs-chevron-right' ></i>", 'NO ES UN BOT'],
-            typeSpeed: 50,
-            backSpeed: 150,
-            loop: true
-        });
-    </script>
+        <!-- TypeEffect Scrips -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" async></script>
+        <script src="assets/js/typeEffect.js" async></script>
+
+        <!-- All Portfolio BTN -->        
+        <script src="assets/js/showPortfolio.js" async></script>
+    </body>
 </html>
